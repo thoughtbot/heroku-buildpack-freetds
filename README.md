@@ -42,7 +42,7 @@ Or at least, that's the hope!
 
 This buildpack is tested primarily against the `heroku-22` stack.
 
-Allows for usage of [TinyTDS](https://github.com/rails-sqlserver/tiny_tds) on Heroku.
+Allows for usage of [TinyTDS](https://github.com/thoughtbot/tiny_tds) on Heroku.
 
 ## Usage
 
@@ -56,24 +56,24 @@ linked correctly. For example, in a ruby app, you may add to the Procfile: `rele
 Use master
 
 ```bash
-heroku buildpacks:set --index 1 https://github.com/rails-sqlserver/heroku-buildpack-freetds
+heroku buildpacks:set --index 1 https://github.com/thoughtbot/heroku-buildpack-freetds
 ```
 
-or use a stable tag, like [v1.1.4](https://github.com/rails-sqlserver/heroku-buildpack-freetds/tree/v1.1.4)
+or use a stable tag, like [v1.1.4](https://github.com/thoughtbot/heroku-buildpack-freetds/tree/v1.1.4)
 
 ```bash
-heroku buildpacks:set --index 1 https://github.com/rails-sqlserver/heroku-buildpack-freetds#v1.1.4
+heroku buildpacks:set --index 1 https://github.com/thoughtbot/heroku-buildpack-freetds#v1.1.4
 ```
 
 ## Changelog
 
-- HEAD. [Diff](https://github.com/rails-sqlserver/heroku-buildpack-freetds/compare/v1.1.4...master)
-- 1.1.4 Escape $PATH to ensure dynamic evaluation [Diff](https://github.com/rails-sqlserver/heroku-buildpack-freetds/compare/v1.1.3...v.1.1.4)
-- 1.1.3 Update to support Heroku 22 ssl versoin [Diff](https://github.com/rails-sqlserver/heroku-buildpack-freetds/compare/v1.1.2...v.1.1.3)
-- 1.1.2 Update FREETDS_VERSION from 1.00.21 to 1.00.109; Get source from https. [Diff](https://github.com/rails-sqlserver/heroku-buildpack-freetds/compare/v1.1.1...v1.1.2)
-- 1.1.1 Fixed build linking. [Diff](https://github.com/rails-sqlserver/heroku-buildpack-freetds/compare/v1.1.0...v1.1.1)
-- 1.1.0 Some improvements, including logging and env var FREETDS_REBUILD. [Diff](https://github.com/rails-sqlserver/heroku-buildpack-freetds/compare/v1.0.0...v1.1.0)
-- 1.0.0 First stable release. [Diff](https://github.com/rails-sqlserver/heroku-buildpack-freetds/compare/d17ff27906644d0581e0654cd337562c20dcafe9...v1.0.0)
+- HEAD. [Diff](https://github.com/thoughtbot/heroku-buildpack-freetds/compare/v1.1.4...master)
+- 1.1.4 Escape $PATH to ensure dynamic evaluation [Diff](https://github.com/thoughtbot/heroku-buildpack-freetds/compare/v1.1.3...v.1.1.4)
+- 1.1.3 Update to support Heroku 22 ssl versoin [Diff](https://github.com/thoughtbot/heroku-buildpack-freetds/compare/v1.1.2...v.1.1.3)
+- 1.1.2 Update FREETDS_VERSION from 1.00.21 to 1.00.109; Get source from https. [Diff](https://github.com/thoughtbot/heroku-buildpack-freetds/compare/v1.1.1...v1.1.2)
+- 1.1.1 Fixed build linking. [Diff](https://github.com/thoughtbot/heroku-buildpack-freetds/compare/v1.1.0...v1.1.1)
+- 1.1.0 Some improvements, including logging and env var FREETDS_REBUILD. [Diff](https://github.com/thoughtbot/heroku-buildpack-freetds/compare/v1.0.0...v1.1.0)
+- 1.0.0 First stable release. [Diff](https://github.com/thoughtbot/heroku-buildpack-freetds/compare/d17ff27906644d0581e0654cd337562c20dcafe9...v1.0.0)
 
 ## Debugging
 
